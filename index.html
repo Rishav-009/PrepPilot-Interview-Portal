@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PrepPilot | Interview Preparation Portal</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<div class="container">
+
+    <!-- Sidebar -->
+    <aside class="sidebar">
+
+        <div class="logo">
+            <h2>PrepPilot</h2>
+        </div>
+
+        <nav>
+            <ul>
+                <li class="sideElement"><a href="index.html" class="active">🏠 Dashboard</a></li>
+                <li class="sideElement"><a href="tracker.html">💻 DSA Tracker</a></li>
+                <li class="sideElement"><a href="sheet.html">📄 Coding Sheet</a></li>
+                <li class="sideElement"><a href="planner.html">📅 Study Planner</a></li>
+                <li class="sideElement"><a href="quiz.html">❓ Mock Quiz</a></li>
+                <li class="sideElement"><a href="notes.html">📝 Notes</a></li>
+                <li class="sideElement"><a href="analytics.html">📊 Analytics</a></li>
+                <li class="sideElement"><a href="settings.html">⚙ Settings</a></li>
+            </ul>
+        </nav>
+
+    </aside>
+
+    <!-- Main Content -->
+    <div class="content">
+
+        <!-- Navbar -->
+        <header class="navbar">
+
+            <input class="search" type="text" placeholder="Search...">
+
+            <div class="profile-section">
+                <img src="assests/images/profile.jpeg"
+                     alt="Profile Picture"
+                     class="profile-pic">
+                <span>Rishav</span>
+            </div>
+
+        </header>
+
+        <!-- Dashboard -->
+        <main class="dashboard">
+
+            <!-- Welcome Card -->
+            <section class="card welcome-card">
+
+                <h1>Good Evening, Rishav 👋</h1>
+
+                <p>Ready to continue your interview preparation?</p>
+
+                <div class="welcome-info">
+                    <span>📅 <span id="current-date">Loading...</span></span>
+                    <span>🔥 <span id="streak-count">7</span> Day Streak</span>
+                </div>
+
+            </section>
+
+            <!-- Statistics -->
+            <section class="stats">
+
+                <!-- Goal Card -->
+                <section class="card goal-card">
+
+                    <h3>Today's Goal</h3>
+
+                    <ul class="checklist">
+                        <li>
+                            <input type="checkbox" id="goal1">
+                            <label for="goal1">Finish Graphs</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="goal2">
+                            <label for="goal2">Do Aptitude</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="goal3">
+                            <label for="goal3">Study for 3 Hours</label>
+                        </li>
+                    </ul>
+
+                    <p>
+                        <strong>Progress:</strong>
+                        <span id="goal-progress">0 / 3 Completed</span>
+                    </p>
+
+                </section>
+
+                <!-- Progress Card -->
+                <section class="card progress-card">
+                    <h3>Overall Progress</h3>
+                    <h2 id="overall-progress">72%</h2>
+                    <div class="progress-bar">
+                        <div class="progress-fill"></div>
+                    </div>
+                </section>
+
+                <!-- Streak Card -->
+                <section class="card streak-card">
+                    <h3>Current Streak</h3>
+                    <h2 id="streak-days">7 Days</h2>
+                    <p>Keep the momentum going!</p>
+                </section>
+
+                <!-- Study Time Card -->
+                <section class="card study-card">
+                    <h3>Study Time</h3>
+                    <h2 id="study-time">2h 15m</h2>
+                    <p>Today's Study Time</p>
+                </section>
+
+            </section>
+
+            <!-- Continue Learning -->
+            <section class="card continue-card">
+                <div class="continue-info">
+                    <h2>Continue Learning</h2>
+                    <p id="current-topic">Graphs</p>
+                    <p id="topic-progress">65% Completed</p>
+                </div>
+                <button>Continue</button>
+            </section>
+
+            <!-- Bottom Section: Tasks + Activity side by side -->
+            <div class="bottom-section">
+
+                <!-- Today's Tasks -->
+                <section class="card tasks-card">
+                    <h2>Today's Tasks</h2>
+                    <ul>
+                        <li>
+                            <input type="checkbox" id="task1">
+                            <label for="task1">Finish Graphs</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="task2">
+                            <label for="task2">Solve 2 DP Questions</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="task3">
+                            <label for="task3">Revise OOP</label>
+                        </li>
+                    </ul>
+                </section>
+
+                <!-- Recent Activity -->
+                <section class="card activity-card">
+                    <h2>Recent Activity</h2>
+                    <ul>
+                        <li>✅ Solved Two Sum</li>
+                        <li>📝 Updated Notes</li>
+                        <li>📅 Completed Planner Task</li>
+                    </ul>
+                </section>
+
+            </div>
+
+        </main>
+
+    </div>
+
+</div>
+
+</body>
+</html>
