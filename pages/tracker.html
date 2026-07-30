@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PrepPilot | DSA Tracker</title>
+
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/tracker.css">
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- Sidebar -->
+    <aside class="sidebar">
+
+        <div class="logo">
+            <h2>PrepPilot</h2>
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="../index.html">🏠 Dashboard</a></li>
+                <li><a class="active" href="tracker.html">💻 DSA Tracker</a></li>
+                <li><a href="sheet.html">📄 Coding Sheet</a></li>
+                <li><a href="planner.html">📅 Study Planner</a></li>
+                <li><a href="quiz.html">❓ Mock Quiz</a></li>
+                <li><a href="notes.html">📝 Notes</a></li>
+                <li><a href="analytics.html">📊 Analytics</a></li>
+                <li><a href="settings.html">⚙ Settings</a></li>
+            </ul>
+        </nav>
+
+    </aside>
+
+    <!-- Main Content -->
+    <div class="content">
+
+        <!-- Navbar -->
+        <header class="navbar">
+
+            <h2>DSA Progress Tracker</h2>
+
+            <div class="profile-section">
+                <img src="../assets/images/profile.jpeg"
+                     class="profile-pic"
+                     alt="Profile">
+                <span>Rishav</span>
+            </div>
+
+        </header>
+
+        <main class="dashboard">
+
+            <!-- Summary Cards -->
+
+            <section class="stats">
+
+                <div class="card">
+                    <h3>Total Problems</h3>
+                    <h2 id="total-problems">240</h2>
+                </div>
+
+                <div class="card">
+                    <h3>Solved</h3>
+                    <h2 id="solved-problems">0</h2>
+                </div>
+
+                <div class="card">
+                    <h3>Completion</h3>
+                    <h2 id="completion-percent">0%</h2>
+                </div>
+
+                <div class="card">
+                    <h3>Current Topic</h3>
+                    <h2 id="current-topic">Arrays</h2>
+                </div>
+
+            </section>
+
+            <!-- Tracker Table -->
+
+            <section class="card">
+
+                <h2>Topic Progress</h2>
+
+                <table class="tracker-table">
+
+                    <thead>
+
+                    <tr>
+                        <th>Topic</th>
+                        <th>Total</th>
+                        <th>Solved</th>
+                        <th>Progress</th>
+                    </tr>
+
+                    </thead>
+
+                    <tbody>
+
+                    <tr>
+
+                        <td>Arrays</td>
+
+                        <td>30</td>
+
+                        <td>
+
+                            <input
+                                    type="number"
+                                    min="0"
+                                    max="30"
+                                    value="0"
+                                    class="topic-input"
+                                    data-total="30">
+
+                        </td>
+
+                        <td>
+
+                            <div class="progress-bar">
+
+                                <div class="progress-fill"></div>
+
+                            </div>
+
+                        </td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td>Strings</td>
+
+                        <td>25</td>
+
+                        <td>
+
+                            <input
+                                    type="number"
+                                    min="0"
+                                    max="25"
+                                    value="0"
+                                    class="topic-input"
+                                    data-total="25">
+
+                        </td>
+
+                        <td>
+
+                            <div class="progress-bar">
+
+                                <div class="progress-fill"></div>
+
+                            </div>
+
+                        </td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td>Binary Search</td>
+
+                        <td>20</td>
+
+                        <td>
+
+                            <input
+                                    type="number"
+                                    min="0"
+                                    max="20"
+                                    value="0"
+                                    class="topic-input"
+                                    data-total="20">
+
+                        </td>
+
+                        <td>
+
+                            <div class="progress-bar">
+
+                                <div class="progress-fill"></div>
+
+                            </div>
+
+                        </td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td>Linked List</td>
+
+                        <td>20</td>
+
+                        <td>
+
+                            <input
+                                    type="number"
+                                    min="0"
+                                    max="20"
+                                    value="0"
+                                    class="topic-input"
+                                    data-total="20">
+
+                        </td>
+
+                        <td>
+
+                            <div class="progress-bar">
+
+                                <div class="progress-fill"></div>
+
+                            </div>
+
+                        </td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td>Trees</td>
+
+                        <td>30</td>
+
+                        <td>
+
+                            <input
+                                    type="number"
+                                    min="0"
+                                    max="30"
+                                    value="0"
+                                    class="topic-input"
+                                    data-total="30">
+
+                        </td>
+
+                        <td>
+
+                            <div class="progress-bar">
+
+                                <div class="progress-fill"></div>
+
+                            </div>
+
+                        </td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td>Graphs</td>
+
+                        <td>25</td>
+
+                        <td>
+
+                            <input
+                                    type="number"
+                                    min="0"
+                                    max="25"
+                                    value="0"
+                                    class="topic-input"
+                                    data-total="25">
+
+                        </td>
+
+                        <td>
+
+                            <div class="progress-bar">
+
+                                <div class="progress-fill"></div>
+
+                            </div>
+
+                        </td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td>Dynamic Programming</td>
+
+                        <td>30</td>
+
+                        <td>
+
+                            <input
+                                    type="number"
+                                    min="0"
+                                    max="30"
+                                    value="0"
+                                    class="topic-input"
+                                    data-total="30">
+
+                        </td>
+
+                        <td>
+
+                            <div class="progress-bar">
+
+                                <div class="progress-fill"></div>
+
+                            </div>
+
+                        </td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td>Greedy</td>
+
+                        <td>20</td>
+
+                        <td>
+
+                            <input
+                                    type="number"
+                                    min="0"
+                                    max="20"
+                                    value="0"
+                                    class="topic-input"
+                                    data-total="20">
+
+                        </td>
+
+                        <td>
+
+                            <div class="progress-bar">
+
+                                <div class="progress-fill"></div>
+
+                            </div>
+
+                        </td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td>Backtracking</td>
+
+                        <td>20</td>
+
+                        <td>
+
+                            <input
+                                    type="number"
+                                    min="0"
+                                    max="20"
+                                    value="0"
+                                    class="topic-input"
+                                    data-total="20">
+
+                        </td>
+
+                        <td>
+
+                            <div class="progress-bar">
+
+                                <div class="progress-fill"></div>
+
+                            </div>
+
+                        </td>
+
+                    </tr>
+
+                    </tbody>
+
+                </table>
+
+            </section>
+
+        </main>
+
+    </div>
+
+</div>
+
+<script src="../js/tracker.js"></script>
+
+</body>
+</html>
